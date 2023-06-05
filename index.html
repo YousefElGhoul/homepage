@@ -39,15 +39,18 @@
                     <i class="fas fa-cloud"></i>
                 </a>
             </div>
-            <div class="sub-header">
-            </div>
         </nav>
         <div class="title">
-            <h1>
-                Welcome, Yousef!
-            </h1>
+            Welcome, Yousef!
         </div>
         <div id="clock"></div>
+        <div class="weather-container">
+            <div class="row">
+                <div id="weather-description"></div>
+                &nbsp;-&nbsp;
+                <div id="temp"></div>
+            </div>
+        </div>
         <div class="bookmark-container">
             <div class="bookmark-set">
                 <div class="title">
@@ -165,6 +168,22 @@
         }
 
         window.onload = () => {
+			let xhr = new XMLHttpRequest();
+            // Request to open weather map
+            xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=360630&units=Metric&appid=5b16e5f0d839efcfbefec77dac2495b5');
+            xhr.onload = () => {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        let json = JSON.parse(xhr.responseText);
+                        console.log(json);
+                        document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + " C";
+                        document.getElementById("weather-description").innerHTML = json.weather[0].description + " ";
+                    } else {
+                        console.log('error msg: ' + xhr.status);
+                    }
+                }
+            }
+            xhr.send();
             // Set up the clock
             document.getElementById("clock").innerHTML = getTime();
             // Set clock interval to tick clock

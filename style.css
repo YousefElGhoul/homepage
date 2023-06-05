@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .header a{
     margin-left: 20px;
@@ -41,6 +41,19 @@ body {
     font-weight: 600;
     color: #ededed;
     margin: 0em 0em .35em 0em;
+    text-align: center;
+}
+.weather-container {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ededed;
+    margin: 0em 0em .35em 0em;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .bookmark-container {
@@ -79,7 +92,6 @@ body {
     font-size: 4.0rem;
     font-family: "Anton";
     color: #ffffff;
-    margin-bottom: .25em;
 }
 
 #search {
@@ -117,7 +129,5 @@ body {
     .bookmark-container > .bookmark-set {
         width: auto;
         margin: 1em 0em;
-    }
-    .header {
     }
 }
