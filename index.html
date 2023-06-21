@@ -107,8 +107,9 @@
                     <a class="bookmark" href="https://bbs.archlinux.org/" target="_self">
                         Arch Forums
                     </a>
-                    <a class="bookmark" href="https://www.archlinux.org/planet/" target="_self">
-                        Planet Arch
+                    <a class="bookmark" href="https://flathub.org" target="_self">
+                        <i class="fa fa-box"></i>
+                        Flathub
                     </a>
                 </div>
             </div>
@@ -161,11 +162,9 @@
         // Get current time and format
         getTime = () => {
             let date = new Date(),
-                timezone = 3,
                 min = date.getMinutes(),
                 sec = date.getSeconds(),
-                hourBefore = date.getHours() + timezone,
-                hour = (hourBefore >= 24 ? hourBefore - 24 : hourBefore);
+                hour = date.getHours()
 
             return "" + 
                 (hour < 10 ? ("0" + hour) : hour) + ":" + 
