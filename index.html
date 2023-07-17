@@ -175,7 +175,7 @@
         window.onload = () => {
 			let xhr = new XMLHttpRequest();
             // Request to open weather map
-            xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=360630&units=Metric&appid=5b16e5f0d839efcfbefec77dac2495b5');
+            xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=360630&units=Metric&appid=5b16e5f0d839efcfbefec77dac2495b5');
             xhr.onload = () => {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
