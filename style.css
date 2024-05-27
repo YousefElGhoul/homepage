@@ -3,66 +3,57 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
 body {
-    background-color: #282c34;
+    background-color: #24273a;
     margin: 0px;
 }
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#clock {
-    font-family: sans-serif;
-    font-size: 4.0rem;
-    font-family: "Anton";
-    color: #fff;
-    margin-bottom: .25em;
-}
-
-#search {
-    width: 100%;
-    height: 100vh;
-    background-color: #000000;
-    display: none;
-    position: absolute;
-    box-sizing: border-box;
-    flex-direction: column;
+.header {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    color: #f3f4f5;
+    font-size: 1.6rem;
+}
+.header a{
+    margin-left: 20px;
+    margin-right: 20px;
+    color:  #f3f4f5;
+    text-decoration: none;
+}
+.header a:hover{
+    color: #c2c3c4;
 }
 
-#search-field {
-    width: 90%;
-    padding: .75em 1em;
-    box-sizing: border-box;
-    background-color: #000000;
-    border: solid 0px #000000;
-    font-family: "Roboto Mono";
-    font-size: 4rem;
-    color: #f2f2f2;
-    outline: none;
-    border-radius: 3px;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-.weather-container {
-    width: 30%;
-    background-color: #000000;
-    padding: 1em;
-    border-radius: 3px;
-    font-family: "Roboto Mono";
+.title {
+    font-family: "Roboto";
     font-size: 1.2rem;
-    color: #fff;
+    font-weight: 600;
+    color: #f3f4f5;
+    margin: 0em 0em .35em 0em;
     text-align: center;
 }
-.inline {
-    display: inline-block;
+.weather-container {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:  #f3f4f5;
+    margin: 0em 0em .35em 0em;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .bookmark-container {
@@ -71,6 +62,66 @@ body {
     justify-content: center;
     width: 60%;
     margin: 1em 0em;
+}
+.bookmark-set{
+    padding: 1em;
+    background-color: #191b29;
+    border-radius: 3px;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    width: 25%;
+    height: 16em;
+    margin: 0em .5em;
+}
+.bookmark-inner-container {
+    overflow-y: scroll;
+    height: 80%;
+    vertical-align: top;
+}
+.bookmark {
+    text-decoration: none;
+    color:  #c2c3c4;
+    display:block;
+    margin: .4em 0em;
+}
+.bookmark:hover {
+    color:  #f3f4f5;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #c2c3c4;
+  display: block;
+}
+.footer a:hover {
+  color: #f3f4f5;
+}
+
+#clock {
+    font-size: 4.0rem;
+    font-family: "Anton";
+    color:  #f3f4f5;
+}
+
+#search {
+    width: 100%;
+    height: 100%;
+    background-color: #24273a;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-field {
+    width: 90%;
+    background-color: #24273a;
+    border: solid 0px #24273a;
+    font-family: "Roboto Mono";
+    font-size: 4rem;
+    color:  #f3f4f5;
+    outline: none;
+    text-align: center;
 }
 
 @media only screen and (max-width: 960px) {
@@ -89,36 +140,3 @@ body {
         margin: 1em 0em;
     }
 }
-
-.bookmark-set{
-    padding: 1em;
-    background-color: #000000;
-    border-radius: 3px;
-    font-family: "Roboto Mono";
-    font-size: .85rem;
-    width: 25%;
-    height: 16em;
-    margin: 0em .5em;
-}
-.bookmark-inner-container {
-    overflow-y: scroll;
-    height: 80%;
-    vertical-align: top;
-}
-.bookmark-title {
-    font-family: "Roboto";
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ededed;
-    margin: 0em 0em .35em 0em;
-}
-.bookmark {
-    text-decoration: none;
-    color: #8c8c8b;
-    display:block;
-    margin: .4em 0em;
-}
-.bookmark:hover {
-    color: #fff;
-}
-
