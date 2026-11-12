@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome!</title>
+  <script src="https://kit.fontawesome.com/ca7138c89a.js" crossorigin="anonymous"></script>
+  <script src="time.js"></script>
+  <script src="weather.js"></script>
+  <link href="resources/favicon.png" rel="icon" type="image/x-icon" />
+  <link href="global.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <nav class="header">
+      <a href="https://www.youtube.com/feed/subscriptions" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://claude.ai/" target="_blank">
+        <i class="fa-brands fa-claude"></i>
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://drive.google.com/drive/u/1/my-drive" target="_blank">
+        <i class="fa-brands fa-google-drive"></i>
+      </a>
+      <a href="https://www.icloud.com/" target="_blank">
+        <i class="fas fa-cloud"></i>
+      </a>
+    </nav>
+    <div class="top-container">
+      <div class="hello txt">
+        Welcome!
+      </div>
+
+      <div id="clock"></div>
+
+      <a href="../weather" class="weather txt">
+        <div id="weatherDescription"></div>
+        &nbsp;-&nbsp;
+        <div id="temp"></div>
+      </a>
+    </div>
+    <div class="bottom-container">
+      <div class="bookmark-set">
+        <div class="title txt">
+          <i class="fas fa-bookmark"></i>
+          Bookmarks
+        </div>
+        <a class="bookmark" href="https://start.spring.io/" target="_blank">
+          <i class="fab fa-java" aria-hidden="true"></i>
+          Spring Initializr
+        </a>
+        <hr class="solid">
+        <a class="bookmark" href="https://gitlab.com" target="_blank">
+          <i class="fab fa-gitlab"></i>
+          GitLab
+        </a>
+        <a class="bookmark" href="https://mastodon.social/home" target="_blank">
+          <i class="fab fa-mastodon" aria-hidden="true"></i>
+          Mastodon
+        </a>
+        <a class="bookmark" href="https://roadmap.sh/" target="_blank">
+          <i class="fas fa-map-pin" aria-hidden="true"></i>
+          roadmap.sh
+        </a>
+        <hr class="solid">
+        <a class="bookmark" href="https://fmhy.net/" target="_blank">
+          <i class="fas fa-play" aria-hidden="true"></i>
+          FreeMediaHeckYeah
+        </a>
+        <a class="bookmark" href="https://www.amazon.eg/-/en/" target="_blank">
+          <i class="fa-brands fa-amazon"></i>
+          Amazon.eg
+        </a>
+        <hr class="solid">
+        <a class="bookmark" href="../leetcode-tracker" target="_self">
+          <i class="fa-brands fa-leetcode" aria-hidden="true"></i>
+          LeetCode Tracker
+        </a>
+      </div>
+      <div class="bookmark-set">
+        <div class="title txt">
+          <i class="fa-brands fa-arch-linux"></i>rch Linux
+        </div>
+        <a class="bookmark" href="https://www.archlinux.org/" target="_blank">
+          <i class="fa-brands fa-arch-linux"></i>rch Homepage
+        </a>
+        <a class="bookmark" href="https://wiki.archlinux.org/" target="_blank">
+          <i class="fa-brands fa-arch-linux"></i>rch Wiki
+        </a>
+        <a class="bookmark" href="https://www.archlinux.org/packages/" target="_blank">
+          <i class="fa-brands fa-arch-linux"></i>rch Packages
+        </a>
+        <a class="bookmark" href="https://aur.archlinux.org/" target="_blank">
+          <i class="fa-brands fa-arch-linux"></i>UR Home
+        </a>
+        <a class="bookmark" href="https://bugs.archlinux.org/" target="_blank">
+          <i class="fa-brands fa-arch-linux"></i>rch Bugs
+        </a>
+        <a class="bookmark" href="https://bbs.archlinux.org/" target="_blank">
+          <i class="fa-brands fa-arch-linux"></i>rch Forums
+        </a>
+        <hr class="solid">
+        <a class="bookmark" href="https://flathub.org" target="_blank">
+          <i class="fa fa-box"></i>
+          Flathub
+        </a>
+        <hr class="solid">
+        <a class="bookmark" href="https://reddit.com/r/archlinux" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/<i class="fa-brands fa-arch-linux"></i>rchlinux
+        </a>
+      </div>
+      <div class="bookmark-set">
+        <div class="title txt">
+          <i class="fa fa-reddit-alien"></i>
+          Reddit
+        </div>
+        <a class="bookmark" href="https://reddit.com/r/Egypt" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/ <i class="fas fa-ankh"></i> Egypt
+        </a>
+        <a class="bookmark" href="https://reddit.com/r/linux" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/ <i class="fab fa-linux"></i> linux
+        </a>
+        <a class="bookmark" href="https://reddit.com/r/commandline" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/ <i class="fas fa-terminal"></i> commandline
+        </a>
+        <a class="bookmark" href="https://reddit.com/r/vim" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/<i class="fa-brands fa-vim"></i>vim
+        </a>
+        <a class="bookmark" href="https://www.reddit.com/r/selfhosted/" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/<i class="fa-solid fa-server"></i>selfhosted
+        </a>
+        <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/unixporn
+        </a>
+        <a class="bookmark" href="https://reddit.com/r/compsci" target="_blank">
+          /<i class="fa fa-reddit-alien"></i>/compsci
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://github.com/YousefElGhoul/homepage">
+        <i class="fa-brands fa-github"></i>
+        Repo
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // On load
+    window.onload = () => {
+      updateClock();
+      updateWeather();
+    }
+  </script>
+</body>
+
+</html>
